@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+input, 
+button, 
+textarea{
+    font:inherit;
+}
+/* VARIABLES */
+
+
+/* UTILITY */
+
+.offscreen{
+    position: absolute;
+    left: -10000px;
+}
+
+.nowrap{
+    white-space: nowrap;
+}
+
+.center{
+    text-align: center;
+}
+
+/* GENERAL STYLES */
+
+html{
+    font-family: 'Nunito', sans-serif;
+    font-size: clamp(1rem, 2.2vh, 1.5rem);
+    scroll-behavior: smooth;
+    background-image: radial-gradient(white,black),url('../img/background.jpg');
+    background-blend-mode:multiply;
+    background-size: cover;
+}
+
+body{
+    background-image: linear-gradient(#1B998B,whitesmoke);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 2fr 8fr 1fr;
+    max-width: 800px;
+    margin: 0 auto;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    box-shadow: 0 0 20px black;
+}
+
+nav{
+    background-color: whitesmoke;
+    border-bottom: 2px solid black;
+    box-shadow: 0 0 10px black;
+}
+
+p{
+    margin: 5px;
+    padding: 5px;
+    text-indent: 2rem;
+}
+
+.LF{
+    font-size: x-large;
+}
+
+a:any-link{
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+a:hover{
+    color: #333;
+}
+
+a:active{
+    color: #666;
+}
+
+.navLi{
+    margin: 5px;
+    padding: 5px;
+}
+
+.ul{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.h1{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+    color: whitesmoke;
+    background-color: black;
+}
+
+.h2{
+    text-align: center;
+}
+
+.main{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+.footer{
+    position: sticky;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: whitesmoke;
+}
+
+
