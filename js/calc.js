@@ -36,25 +36,30 @@ function Equals()
             case "+":
                 previousText = previousText.substring(0,previousText.length -2);
                 sum = Number(inputText) + Number(previousText);
-                document.getElementById("previous").innerText = previousText + " + " + inputText + " = " + sum;
+                document.getElementById("previous").innerText = previousText + " + " + inputText + " =";
+                document.getElementById("input").innerText = sum;
+
                 hasDoneOperation = true;
                 break;
             case "-":
                 previousText = previousText.substring(0,previousText.length -2);
-                sum = Number(inputText) - Number(previousText);
-                document.getElementById("previous").innerText = previousText + " - " + inputText + " = " + sum;
+                sum = Number(previousText) - Number(inputText);
+                document.getElementById("previous").innerText = previousText + " - " + inputText + " =";
+                document.getElementById("input").innerText = sum;
                 hasDoneOperation = true;
                 break;
             case "x":
                 previousText = previousText.substring(0,previousText.length -2);
                 sum = Number(inputText) * Number(previousText);
-                document.getElementById("previous").innerText = previousText + " x " + inputText + " = " + sum;
+                document.getElementById("previous").innerText = previousText + " x " + inputText + " =";
+                document.getElementById("input").innerText = sum;
                 hasDoneOperation = true;
                 break;
             case "/":
                 previousText = previousText.substring(0,previousText.length -2);
                 sum = Number(previousText) / Number(inputText);
-                document.getElementById("previous").innerText = previousText + " / " + inputText + " = " + sum;
+                document.getElementById("previous").innerText = previousText + " / " + inputText + " =";
+                document.getElementById("input").innerText = sum;
                 hasDoneOperation = true;
                 break;
                 
