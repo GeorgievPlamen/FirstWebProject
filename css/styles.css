@@ -34,6 +34,8 @@ textarea{
 }
 
 .center{
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
@@ -70,6 +72,19 @@ p{
     margin: 5px;
     padding: 5px;
     text-indent: 2rem;
+}
+
+button{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+}
+
+button:active{
+    color:#999;
 }
 
 .LF{
@@ -117,7 +132,7 @@ a:active{
 .main{
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-evenly;
+    justify-content:space-between
 }
 
 .footer{
@@ -129,4 +144,78 @@ a:active{
     color: whitesmoke;
 }
 
+.appsArticle{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.appsSection{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.calcBody{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+    width: clamp(320px, 25vw, 500px);
+    height: clamp(500px, 47vw, 750px);
+    border-radius: 2.5%;
+}
+
+.calcDisplay{
+    position: absolute;
+    background-color: #333;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: end;
+    text-align: center;
+    width: clamp(300px, 23vw, 480px);
+    height: clamp(150px, 15vw, 250px);
+    padding: 2px;
+    margin: 10px;
+    border-radius: 2.5%;
+}
+
+.calcDisplayPrevious{
+    padding: 0px;
+    padding-right: 5px;
+    margin: 0px;
+    color: whitesmoke;
+}
+
+
+.calcDisplayInputNumber{
+    padding: 0px;
+    padding-right: 5px;
+    margin: 0px;
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+.calcButtonGrid{
+    position: absolute;
+    top: clamp(160px, 16vw, 260px);
+    display: grid;
+    width: clamp(300px, 23vw, 480px);
+    height: auto;
+    border-radius: 2.5%;
+    grid-template-columns: auto auto auto auto;
+}
+.calcButton{
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    width: clamp(70px, 5vw, 115px);
+    height: clamp(60px, 4vw, 100px);
+    padding: 2.5px;
+    margin: 2.5px;
+    border-radius: 10%;
+}
 
