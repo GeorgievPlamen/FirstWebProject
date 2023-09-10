@@ -127,12 +127,13 @@ a:active{
 
 .h2{
     text-align: center;
+    padding-top: 1rem;
+    margin-top: 1rem;
 }
 
 .main{
     display: flex;
     flex-flow: column nowrap;
-    justify-content:space-between
 }
 
 .footer{
@@ -145,14 +146,16 @@ a:active{
 }
 
 .appsArticle{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    text-align: center;
+    display: grid;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    grid-template-columns: auto auto;
 }
 
 .appsSection{
     display: flex;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
     flex-flow: column nowrap;
     justify-content: center;
     text-align: center;
