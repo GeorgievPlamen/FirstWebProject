@@ -161,6 +161,8 @@ a:active{
     text-align: center;
 }
 
+/* Calc app classes*/
+
 .calcBody{
     position: relative;
     display: flex;
@@ -222,3 +224,71 @@ a:active{
     border-radius: 10%;
 }
 
+/* To Do app classes*/
+
+.ToDoBody{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0.3rem;
+    padding: 0.2rem;
+    width: auto;
+    height: auto;
+}
+
+.ToDoControls{
+    display: flex;
+    margin: 0.3rem;
+    padding: 0.2rem;
+    justify-content: space-around;
+}
+
+.ToDoControlsButton{
+    margin: 0.2rem;
+    padding: 0.1rem;
+    width: clamp(100px, 10vw, 400px);
+    height: clamp(60px, 6vw, 230px);
+    background: #333;
+    border: #222 solid 3px;
+    border-radius: 15%;
+}
+
+.ToDoContent{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.ToDoItem{
+    display: grid;
+    grid-template-columns: 5% 85% 10%;
+    margin: 0.2rem;
+    padding: 0.5rem;
+    background: #333;
+    border: #222 solid 2px;
+    border-radius: 15px;
+}
+
+.ToDoItemID{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.ToDoItemText{
+    display: flex;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    justify-content: start;
+    text-align: center;
+    color: whitesmoke;
+    border: #222 solid 3px;
+    border-radius: 10px;
+
+}
+.ToDoItemDone{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: #222 solid 3px;
+    border-radius: 15%;
+}
