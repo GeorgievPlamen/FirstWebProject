@@ -258,6 +258,7 @@ a:active{
 }
 
 .ToDoItem{
+    position: relative;
     display: grid;
     grid-template-columns: 5% 85% 10%;
     margin: 0.2rem;
@@ -274,11 +275,22 @@ a:active{
     color: whitesmoke;
 }
 
+.ToDoItemInputText{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+}
+
 .ToDoItemText{
+    
     display: flex;
     margin-left: 0.2rem;
     margin-right: 0.2rem;
-    justify-content: start;
+    justify-content: center;
     text-align: center;
     color: whitesmoke;
     border: #222 solid 3px;

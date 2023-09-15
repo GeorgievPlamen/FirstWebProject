@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/main.js"></script>
+    <script src="/js/todo.js"></script>
 </head>
 <body>
     <header>
@@ -27,30 +27,15 @@
     <main class="main">
         <div class="ToDoBody">
             <section class="ToDoControls" id="ToDoControls">
-                <div class="ToDoControlsButton" id="ToDoAdd"><button>Add</button></div>
-                <div class="ToDoControlsButton" id="ToDoEdit"><button>Edit</button></div>
+                <div class="ToDoControlsButton" id="ToDoAdd" onclick="AddItem()"><button>Add</button></div>
             </section>
             <section class="ToDoContent" id="ToDoContent">
                 <div class="ToDoItem" id="ToDoItem">
                     <div class="ToDoItemID" id="ToDoItemID">1.</div>
                     <div class="ToDoItemText" id="ToDoItemText">
-                        Some Text here
+                        <input class="ToDoItemInputText" type="text" name="ToDoItemInputText" id="ToDoItemInputText" placeHolder="Write Activity">
                     </div>
-                    <div class="ToDoItemDone"><button>&checkmark;</button></div>
-                </div>
-                <div class="ToDoItem" id="ToDoItem">
-                    <div class="ToDoItemID" id="ToDoItemID">2.</div>
-                    <div class="ToDoItemText" id="ToDoItemText">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia tempora accusamus eveniet aspernatur facere suscipit quaerat et, vero minima perferendis cum reiciendis recusandae eaque ea architecto quos officiis, pariatur vitae!
-                    </div>
-                    <div class="ToDoItemDone"><button>&checkmark;</button></div>
-                </div>
-                <div class="ToDoItem" id="ToDoItem">
-                    <div class="ToDoItemID" id="ToDoItemID">99.</div>
-                    <div class="ToDoItemText" id="ToDoItemText">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim iste laudantium eius autem totam laborum unde pariatur vitae dolorum, soluta aut ipsam eum, voluptatem molestias amet numquam commodi aperiam distinctio!
-                    </div>
-                    <div class="ToDoItemDone"><button>&checkmark;</button></div>
+                    <div class="ToDoItemDone" onclick="FinishItem()" id="ToDoItemDone"><button>&checkmark;</button></div>
                 </div>
             </section>
         </div>
