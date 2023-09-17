@@ -24,6 +24,8 @@ function AddItem()
     counter++;
 }
 
+//TODO Fix delete bug.
+
 function FinishItem()
 {
     if(!addingItem)
