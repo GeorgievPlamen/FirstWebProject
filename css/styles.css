@@ -19,8 +19,6 @@ button,
 textarea{
     font:inherit;
 }
-/* VARIABLES */
-
 
 /* UTILITY */
 
@@ -305,6 +303,7 @@ a:active{
     border-radius: 15%;
 }
 
+/*Weather*/
 .WeatherContainer{
     position: relative;
     display: grid;
@@ -314,4 +313,15 @@ a:active{
     border: #222 solid 2px;
     border-radius: 15px;
     color: whitesmoke;
+}
+
+/*Birdy*/
+.game{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#board{
+    background-color: skyblue;
+    background-image: url('../img/FlappyBird//flappybirdbg.png');
 }
