@@ -26,15 +26,16 @@
     </header>
     <main class="main">
         <section>
-            <button onclick="GetWeatherData()">Request</button>
+            <h2 class="h2">Weather App</h2>
         </section>
         <div class="ToDoItem" id="ToDoItem">
             <div class="ToDoItemID" id="ToDoItemID"></div>
             <div class="ToDoItemText" id="ToDoItemText">
                 <input class="ToDoItemInputText" type="text" name="ToDoItemInputText" id="cityText" placeHolder="Enter City Name">
             </div>
-            <div class="ToDoItemDone" onclick="GetCity()" id="ToDoItemDone"><button>&RightArrow;</button></div>
+            <div class="ToDoItemDone" onclick="GetWeatherData()" id="ToDoItemDone"><button>&RightArrow;</button></div>
         </div>
+        <section id="WeatherPlaceHolder"></section>
     </main>
     <footer class="footer"> &copy;Plamen Georgiev</footer>
 </body>

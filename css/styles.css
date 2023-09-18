@@ -169,7 +169,7 @@ a:active{
     justify-content: center;
     background-color: #222;
     width: clamp(320px, 25vw, 500px);
-    height: clamp(500px, 47vw, 750px);
+    height: clamp(500px, 39vw, 750px);
     border-radius: 2.5%;
 }
 
@@ -182,7 +182,7 @@ a:active{
     align-items: end;
     text-align: center;
     width: clamp(300px, 23vw, 480px);
-    height: clamp(150px, 15vw, 250px);
+    height: clamp(150px, 12vw, 250px);
     padding: 2px;
     margin: 10px;
     border-radius: 2.5%;
@@ -206,7 +206,7 @@ a:active{
 
 .calcButtonGrid{
     position: absolute;
-    top: clamp(160px, 16vw, 260px);
+    top: clamp(160px, 13vw, 260px);
     display: grid;
     width: clamp(300px, 23vw, 480px);
     height: auto;
@@ -303,4 +303,15 @@ a:active{
     text-align: center;
     border: #222 solid 3px;
     border-radius: 15%;
+}
+
+.WeatherContainer{
+    position: relative;
+    display: grid;
+    margin: 0.2rem;
+    padding: 0.5rem;
+    background: #333;
+    border: #222 solid 2px;
+    border-radius: 15px;
+    color: whitesmoke;
 }
